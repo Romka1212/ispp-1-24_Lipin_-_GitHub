@@ -28,7 +28,7 @@ dds"# ispp-1-24_Lipin_-_GitHub"
 ## Примеры кода
 
 Вот пример кода на C# для получения списка студентов из базы данных:
-csharp
+```csharp
 using (var context = new ApplicationDbContext())
 {
     var students = context.Students.ToList();
