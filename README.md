@@ -28,21 +28,13 @@ dds"# ispp-1-24_Lipin_-_GitHub"
 ## Примеры кода
 
 Вот пример кода на C# для получения списка студентов из базы данных:
-'''C#
+csharp
 using (var context = new ApplicationDbContext())
 {
-    var newStudent = new Student
+    var students = context.Students.ToList();
+    foreach (var student in students)
     {
-        Фамилия = "Новый",
-        Имя = "Студент",
-        Отчество = "Тестовый",
-        ДатаРождения = new DateTime(2000, 1, 1),
-        IdГруппы = 1
-    };
-
-    context.Students.Add(newStudent);
-    context.SaveChanges();
-
-    Console.WriteLine($"Добавлен студент с ID: {newStudent.IdСтудента}");
+        Console.WriteLine($"{student.Фамилия} {student.Имя}");
+    }
 }
-'''
+```
