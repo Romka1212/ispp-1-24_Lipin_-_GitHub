@@ -1,4 +1,15 @@
-dds"# ispp-1-24_Lipin_-_GitHub" 
+# Практика по Github
+## ispp-1-24, LipinИНИЦИАЛЫ
+Из прошлой работы я узнал следующие git команды:
+• git config -global user.name
+• git init
+• git status
+• git add
+• git reset
+• git commit -m
+• git log -oneline
+• git diff
+• git reset «» --hard
 
 # Проект "Учет Студентов, Групп и Кураторов"
 
